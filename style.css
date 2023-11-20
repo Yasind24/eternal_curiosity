@@ -15,6 +15,9 @@
 .carousel-caption {
     background-color: rgba(51, 50, 50, 0.5);
 }
+.resumearea {
+    margin: 20px;
+}
 .p-announcement {
     color: rgb(0, 0, 0);
     font-size: xxx-large;
