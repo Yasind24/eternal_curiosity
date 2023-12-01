@@ -36,12 +36,20 @@ function movePlayerDown() {
     player.dy = 15;
 }
 upButton.addEventListener('mousedown', movePlayerUp);
+upButton.addEventListener('touchstart', movePlayerUp);
 upButton.addEventListener('mouseup', stopPlayer);
-upButton.addEventListener('mouseleave', stopPlayer); // In case the mouse leaves the button while pressed
+upButton.addEventListener('touchend', stopPlayer);
+upButton.addEventListener('mouseleave', stopPlayer);
+upButton.addEventListener('touchcancel', stopPlayer);
+// In case the mouse leaves the button while pressed
 
 downButton.addEventListener('mousedown', movePlayerDown);
+downButton.addEventListener('touchstart', movePlayerDown);
 downButton.addEventListener('mouseup', stopPlayer);
-downButton.addEventListener('mouseleave', stopPlayer); // Same as above
+downButton.addEventListener('touchend', stopPlayer);
+downButton.addEventListener('mouseleave', stopPlayer);
+downButton.addEventListener('touchcancel', stopPlayer);
+// Same as above
 
 function movePlayer(e) {
     if (e.keyCode === 38) {
