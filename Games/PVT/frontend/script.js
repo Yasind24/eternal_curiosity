@@ -20,7 +20,7 @@ function startTest() {
 }
 
 function scheduleNextStimulus() {
-  const randomInterval = Math.random() * 8000 + 2000; // Schedule a stimulus between 2 and 10 seconds
+  const randomInterval = Math.random() * 9000 + 1000; // Schedule a stimulus between 1 and 10 seconds
   stimuliTimer = setTimeout(triggerStimulus, randomInterval);
 }
 
