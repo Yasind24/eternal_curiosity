@@ -1,9 +1,13 @@
+/* Header and Body Styles */
 #header {
     border-bottom: 1px dotted;
 }
+
 #body {
     margin: 25px;
 }
+
+/* Resume Header */
 .resumehead {
     border: 1px solid;
     border-radius: 5px;
@@ -11,24 +15,67 @@
     text-align: center;
     background-color: #212529;
     color: rgb(255, 255, 255);
+    padding: 10px; /* Added padding for better spacing */
 }
+
+/* Carousel Caption Background */
 .carousel-caption {
     background-color: rgba(51, 50, 50, 0.5);
 }
+
+/* Resume Area Margin */
 .resumearea {
     margin: 20px;
 }
+
+/* Announcement Styling */
 .p-announcement {
     color: rgb(0, 0, 0);
     font-size: xxx-large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     background-color: rgb(171, 183, 184);
+    padding: 10px; /* Added padding for better spacing */
 }
+
+/* EIP Section Styling */
 .EIP {
     color: rgb(255, 255, 255);
     background-color: black;
     border-radius: 10px;
     text-align: center;
     padding: 5px;
+    margin-bottom: 20px; /* Added margin-bottom for spacing below EIP section */
+}
+
+/* Card Styling for Consistent Size */
+.card {
+    height: 100%; /* Ensure cards take full height within the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out content evenly */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    overflow: hidden; /* Hide overflow to prevent content from spilling out */
+}
+
+/* Card Body for Flexbox Alignment */
+.card-body {
+    flex-grow: 1; /* Allow the body to grow and fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out content within the card body */
+    padding: 15px; /* Consistent padding inside the card */
+}
+
+/* Card Text for Proper Spacing */
+.card-text {
+    margin-bottom: auto; /* Ensure text spacing does not affect card size */
+}
+
+/* Image Inside Cards */
+.card img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-top-left-radius: 5px; /* Match card's rounded corners */
+    border-top-right-radius: 5px; /* Match card's rounded corners */
 }
