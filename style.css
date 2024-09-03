@@ -202,3 +202,25 @@
     }
 
 }  
+/* Custom styles for tabs */
+.custom-tab {
+    color: black !important; /* Force text color to black for inactive tabs */
+    font-weight: normal; /* Default font weight for unselected tabs */
+  }
+  
+  .custom-tab:hover {
+    color: black !important; /* Ensure hover color is also black */
+  }
+  
+  .custom-tab.active {
+    font-weight: bold; /* Bold font weight for the active tab */
+    color: black !important; /* Ensure active tab text is also black */
+    background-color: #f8f9fa; /* Optional: Change background color for active tab */
+    border-color: #dee2e6 #dee2e6 #f8f9fa; /* Optional: To highlight the active tab */
+  }
+  
+  /* Override Bootstrap default focus color */
+  .custom-tab:focus {
+    box-shadow: none; /* Remove the blue outline shadow when focused */
+  }
+  
