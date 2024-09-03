@@ -9,6 +9,7 @@
 
 .hero {
     z-index: 10;
+    overflow-x: hidden;
 }
 /* Resume Header */
 .resumehead {
