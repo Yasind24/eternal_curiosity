@@ -4,7 +4,6 @@
 }
 
 #body {
-    margin: 25px;
     overflow-x: hidden;
 }
 
@@ -32,6 +31,9 @@
     margin: 20px;
 }
 
+.resumearea1 {
+    margin: 20px;
+}
 /* Announcement Styling */
 .p-announcement {
     color: rgb(0, 0, 0);
