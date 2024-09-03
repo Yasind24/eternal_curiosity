@@ -223,5 +223,37 @@
   .custom-tab:focus {
     box-shadow: none; /* Remove the blue outline shadow when focused */
   }
-  
+/* Button style */
+.animated-border {
+  position: relative; /* Needed for the border animation */
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #343a40; /* Button text color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth color transition */
+  border: 2px solid transparent; /* Start with a transparent border */
+}
+
+/* Hover effect for the button */
+.animated-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #000000; /* Define the animated border color */
+  border-radius: 10%;
+  transition: transform 0.3s; /* Smooth animation effect */
+  transform: scale(0); /* Start with no border visible */
+  transform-origin: center;
+}
+
+/* Hover effect animation */
+.animated-border:hover::before {
+  transform: scale(1); /* Grow the border to full size */
+}
+
+
   
