@@ -64,9 +64,24 @@
               <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"></path></svg>
           Portfolio</a></p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <a id="resume-btn" class="btn btn-dark btn-lg px-4 gap-3 animated-border" href="#resume" role="button">Resume</a>
-            <a id="pause-btn" class="btn btn-outline-dark btn-lg px-4 gap-3" href="./Pause/" role="button">Pause?</a>
+            <a id="resume-btn" class="btn btn-dark btn-lg px-4 gap-3 animated-border" href="#resume" role="button"
+               data-bs-toggle="tooltip" data-bs-placement="top" 
+               title="View my professional experience and skills">
+              <i class="bi bi-briefcase-fill me-2"></i>Resume
+            </a>
+            <a id="pause-btn" class="btn btn-outline-dark btn-lg px-4 gap-3" href="./Pause/" role="button"
+               data-bs-toggle="tooltip" data-bs-placement="top" 
+               title="Explore my personal interests and journey">
+              <i class="bi bi-person-fill me-2"></i>Pause
+            </a>
           </div>
+          
+          <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+              return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+          </script>
           <div class="area"> 
             <ul class="circles">
             <li></li>
@@ -91,12 +106,27 @@
         <div class="resumearea">
           <div class="work">
           <div class="container px-1 py-2">
-            <h2 class="pb-2 border-bottom" data-aos="fade-up">Work and Learnings</h2>
+            <h2 class="pb-2 border-bottom" data-aos="fade-up">With more than 8 years of experience</h2>
         
-            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-3">
               <div class="col d-flex flex-column align-items-start gap-2" data-aos="fade-right">
-                <h2 class="fw-bold text-body-emphasis">At the moment, I am a senior consultant at Cognizant Business Consulting</h2>
-                <p class="text-body-secondary">My transition into the IT world as part of Americas Energy & Utilities consulting practice: Working with the world's largest utility across different accounts donning different hats viz., project manager, product owner, business analyst and scrum master. LEARNING A LOT!</p>
+                <h2 class="fw-bold text-body-emphasis">Presently as a<br> Senior Consultant at Cognizant</h2>
+                <h5>Driving product innovation in the Americas Energy & Utilities consulting practice. Working with leading utilities across various roles including product owner, project manager, and agile coach.</h5>
+                <p class="text-body-secondary">
+                <ul>
+                  <li><b>Product Ownership</b> -
+                  Led development of a customer portal for a major utility, managing product roadmap, feature prioritization, and stakeholder engagement.
+                  </li>
+                  <li><b>Agile Methodologies</b> -
+                  Implemented Scrum and Kanban methodologies using Jira and Confluence for efficient product development and team collaboration.
+                  </li>
+                  <li><b>Data-Driven Decision Making</b> -
+                  Utilized Adobe Analytics to drive product decisions and optimize user experiences in marketing communications projects.
+                  </li>
+                  <li><b>Cross-Functional Leadership</b> -
+                  Led diverse teams across engineering, design, and business units to deliver successful product launches and enhancements.
+                  </li>
+                </ul></p>
                 <img src="./Assets/Images/Cognizant.png" alt="Cognizant" width="250">
               </div>
         
@@ -107,7 +137,7 @@
                     </div>
                     <img src="./Assets/Images/Vishvaraj_Group_Logo.jpg" alt="VIL" width="150">
                     <h4 class="fw-semibold mb-0 text-body-emphasis">Business Development</h4>
-                    <p class="text-body-secondary">With an emerging leader in the Indian utility space, worked on market research & analysis to identify potential partners.</p>
+                    <p class="text-body-secondary">Conducted market research & analysis for partner identification, honing skills in product-market fit and user needs assessment.</p>
                   </div>
         
                   <div class="col d-flex flex-column gap-2" data-aos="zoom-in">
@@ -115,7 +145,7 @@
                     </div>
                     <img src="./Assets/Images/VA_Tech_Wabag_Logo_(Correctly_Sized_2021).jpg" alt="Wabag" width="150">
                     <h4 class="fw-semibold mb-0 text-body-emphasis">Project Management</h4>
-                    <p class="text-body-secondary">Handled multiple EPC projects E2E ensuring timely deliverables with quality compliance with a team of engineers & vendors.</p>
+                    <p class="text-body-secondary">Managed E2E EPC projects, developing skills in stakeholder management, resource allocation, and timeline adherence.</p>
                   </div>
         
                   <div class="col d-flex flex-column gap-2" data-aos="zoom-in">
@@ -123,15 +153,15 @@
                     </div>
                     <img src="./Assets/Images/TCE_Logo.png" alt="TCE" width="150">
                     <h4 class="fw-semibold mb-0 text-body-emphasis">Engineering Consulting</h4>
-                    <p class="text-body-secondary">As part of a dedicated engineering team for a French based utility company, worked on multiple consulting assignments.</p>
+                    <p class="text-body-secondary">Worked on consulting assignments for an MNC, gaining insights into user requirements and solution design processes.</p>
                   </div>
         
                   <div class="col d-flex flex-column gap-2" data-aos="zoom-in">
                     <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
                     </div>
                     <img src="./Assets/Images/Construction.jpg" alt="L&T" width="150">
-                    <h4 class="fw-semibold mb-0 text-body-emphasis">Engineering Design</h4>
-                    <p class="text-body-secondary">First job; Worked with some incredible public sector firms to design some of the largest water utilities in India.</p>
+                    <h4 class="fw-semibold mb-0 text-body-emphasis">Design Engineering</h4>
+                    <p class="text-body-secondary">Designed large-scale water utilities, developing a strong foundation in technical knowledge and innovative problem-solving skills.</p>
                   </div>
                 </div>
               </div>
