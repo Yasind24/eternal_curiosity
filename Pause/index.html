@@ -65,9 +65,24 @@
                 </svg>
               Twitter</a></p>
               <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <a class="btn btn-outline-dark btn-lg px-4 gap-3" href="/eternal_curiosity/" role="button">Resume</a>
-                <a class="btn btn-dark btn-lg px-4 gap-3 animated-border" href="#pause" role="button">Pause?</a>
+                <a id="resume-btn-alt" class="btn btn-outline-dark btn-lg px-4 gap-3" href="/eternal_curiosity/" role="button"
+                   data-bs-toggle="tooltip" data-bs-placement="top" 
+                   title="Explore my professional journey and skills">
+                  <i class="bi bi-briefcase-fill me-2"></i>Resume
+                </a>
+                <a id="pause-btn-alt" class="btn btn-dark btn-lg px-4 gap-3 animated-border" href="#pause" role="button"
+                   data-bs-toggle="tooltip" data-bs-placement="top" 
+                   title="Take a moment to reflect on my personal side">
+                  <i class="bi bi-person-fill me-2"></i>Pause?
+                </a>
               </div>
+              
+              <script>
+                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                  return new bootstrap.Tooltip(tooltipTriggerEl)
+                })
+              </script>
             </div>
             <div class="area"> 
               <ul class="circles">
