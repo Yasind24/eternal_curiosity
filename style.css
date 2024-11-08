@@ -1,0 +1,359 @@
+/* Header and Body Styles */
+#header {
+    border-bottom: 1px dotted;
+}
+
+#pause {
+    overflow: hidden; /* This will prevent any overflow, vertically or horizontally */
+    padding: 0 15px; /* Add some padding to prevent text from touching the edges */
+    max-width: 100%; /* Ensure content width does not exceed the parent width */
+    margin: 0 auto; /* Center the content within the section */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+#resume {
+    overflow: hidden; /* This will prevent any overflow, vertically or horizontally */
+    padding: 0 15px; /* Add some padding to prevent text from touching the edges */
+    max-width: 100%; /* Ensure content width does not exceed the parent width */
+    margin: 0 auto; /* Center the content within the section */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.hero {
+    z-index: 10;}
+/* Resume Header */
+.resumehead {
+    border: 1px solid;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: #212529;
+    color: rgb(255, 255, 255);
+    padding: 10px; /* Added padding for better spacing */
+}
+
+/* Carousel Caption Background */
+.carousel-caption {
+    background-color: rgba(51, 50, 50, 0.5);
+}
+/* Announcement Styling */
+.p-announcement {
+    color: rgb(0, 0, 0);
+    font-size: xxx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(171, 183, 184);
+    padding: 10px; /* Added padding for better spacing */
+}
+
+/* EIP Section Styling */
+.EIP {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 20px; /* Added margin-bottom for spacing below EIP section */
+}
+
+/* Card Styling for Consistent Size */
+.card {
+    height: 100%; /* Ensure cards take full height within the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out content evenly */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    overflow: hidden; /* Hide overflow to prevent content from spilling out */
+}
+
+/* Card Body for Flexbox Alignment */
+.card-body {
+    flex-grow: 1; /* Allow the body to grow and fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out content within the card body */
+    padding: 15px; /* Consistent padding inside the card */
+}
+
+/* Card Text for Proper Spacing */
+.card-text {
+    margin-bottom: auto; /* Ensure text spacing does not affect card size */
+}
+
+/* Image Inside Cards */
+.card img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-top-left-radius: 5px; /* Match card's rounded corners */
+    border-top-right-radius: 5px; /* Match card's rounded corners */
+}
+.area{
+    z-index: 1;
+}
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(100, 100, 100, 0.247);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}  
+/* Custom styles for tabs */
+.custom-tab {
+    color: black !important; /* Force text color to black for inactive tabs */
+    font-weight: normal; /* Default font weight for unselected tabs */
+  }
+  
+  .custom-tab:hover {
+    color: black !important; /* Ensure hover color is also black */
+  }
+  
+  .custom-tab.active {
+    font-weight: bold; /* Bold font weight for the active tab */
+    color: black !important; /* Ensure active tab text is also black */
+    background-color: #f8f9fa; /* Optional: Change background color for active tab */
+    border-color: #dee2e6 #dee2e6 #f8f9fa; /* Optional: To highlight the active tab */
+  }
+  
+  /* Override Bootstrap default focus color */
+  .custom-tab:focus {
+    box-shadow: none; /* Remove the blue outline shadow when focused */
+  }
+/* Button style */
+.animated-border {
+  position: relative; /* Needed for the border animation */
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #343a40; /* Button text color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth color transition */
+  border: 2px solid transparent; /* Start with a transparent border */
+}
+
+/* Hover effect for the button */
+.animated-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #000000; /* Define the animated border color */
+  border-radius: 10%;
+  transition: transform 0.3s; /* Smooth animation effect */
+  transform: scale(0); /* Start with no border visible */
+  transform-origin: center;
+}
+
+/* Hover effect animation */
+.animated-border:hover::before {
+  transform: scale(1); /* Grow the border to full size */
+}
+
+.main-timeline {
+  position: relative;
+}
+
+.main-timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #939597;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: #939597;
+  border: 5px solid #618ec9;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+.right {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -12px;
+}
+
+@media screen and (max-width: 600px) {
+  .main-timeline::after {
+    left: 31px;
+  }
+  
+  .timeline {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  .timeline::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+    left: 18px;
+  }
+  
+  .left::before {
+    right: auto;
+  }
+
+  .right {
+    left: 0%;
+  }
+}
+
+  

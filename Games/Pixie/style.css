@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+canvas {
+    background-color: #ffffff;
+    border: 1px solid green;
+    width: 100%;
+    height: auto;
+}
+
+#obstacleCount {
+    background-color: green;
+    color: #ffffff;
+    padding: 2px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    background-color: green;
+    color: white !important;
+    text-align: center;
+}
+
+.btn-primary {
+    width: 100px;
+    background-color: green !important;
+}

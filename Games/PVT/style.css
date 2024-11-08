@@ -1,0 +1,29 @@
+body, html {
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align:center;
+  }
+
+  #test-area {
+    background-color: black;
+    color: white;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 2.5em;
+  }
+  
+  button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1em;
+  }
+  
+  #results {
+    margin-top: 20px;
+  }
+  
